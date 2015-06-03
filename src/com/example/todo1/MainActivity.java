@@ -28,10 +28,10 @@ public class MainActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 		
 		// Create DAO object
-		dao = new TodoDAO(this);
+		//dao = new TodoDAO(this);
 		
 		// Set the list adapter and get TODOs list via DAO
-		setListAdapter(new ListAdapter(this, dao.getTodos()));
+		setListAdapter(new ListAdapter(this, MyApp.getMdao().getTodos()));
 		
 	}
 
